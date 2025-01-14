@@ -133,4 +133,5 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.task
     OWNER to admin;
+	
 
