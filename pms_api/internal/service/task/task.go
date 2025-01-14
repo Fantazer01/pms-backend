@@ -71,8 +71,8 @@ func (s *taskService) UpdateTask(ctx context.Context, taskID string, t *model.Ta
 		Status:      t.Status,
 		ProjectID:   taskFromDb.ProjectID,
 		AuthorID:    taskFromDb.AuthorID,
-		ExecutorID:  taskFromDb.ExecutorID,
-		TesterID:    taskFromDb.TesterID,
+		ExecutorID:  t.ExecutorID,
+		TesterID:    t.TesterID,
 		CreatedAt:   taskFromDb.CreatedAt,
 		Deadline:    t.Deadline,
 	}
